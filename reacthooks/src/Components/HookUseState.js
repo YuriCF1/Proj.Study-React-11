@@ -39,7 +39,7 @@ const HookUseState = () => {
         {/*Aderindo o state ao value para poder alterar com o state*/}
       </form>
       <p>Você tem {age} anos</p>
-      <button type="submit" value="Enviar"></button>
+      <input type="submit" value="Enviar" />
       <hr />
     </div>
   );
