@@ -36,7 +36,7 @@ const HookUseState = () => {
           value={age}
           onChange={(e) => setAge(e.target.value)}
         />{" "}
-        {/*Aderindo o state ao value para poder alterar com o state*/}
+        {/*Aderindo o state ao value para poder alterar com o state. Caso pegue dados de uma API, por exemplo*/}
       </form>
       <p>Você tem {age} anos</p>
       <input type="submit" value="Enviar" />
