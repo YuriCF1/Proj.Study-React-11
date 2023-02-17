@@ -21,10 +21,20 @@ const HookUseEffect = () => {
   const [anotherNumber, setAnotherNumber] = useState(0);
 
   useEffect(() => {
-    if (anotherNumber > 0) { //Valindando caso o dado não exista ainda
+    if (anotherNumber > 0) {
+      //Valindando caso o dado não exista ainda
       console.log("Another number mudou. Agora é: ", anotherNumber);
     }
   }, [anotherNumber]);
+
+  // 7 - A limpeza do useEffect || cleanup
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       console.log("Hello World");
+//       setAnotherNumber(anotherNumber + 1);
+//     }, 2000);
+//     return () => clearTimeout(timer); //Caso a página mude, o timer foi cancelado. É sempre bom para não vazar processos desnecessários
+//   }, [anotherNumber]);
 
   return (
     <div>
