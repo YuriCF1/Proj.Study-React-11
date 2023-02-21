@@ -15,7 +15,8 @@ function App() {
     <div className="App">
       <HookUseContext>
         <h1>React Hooks</h1>
-        <BrowserRouter>
+        
+<BrowserRouter basename={process.env.PUBLIC_URL}>
           <ul>
             <li>
               <Link to="/">Home</Link>
